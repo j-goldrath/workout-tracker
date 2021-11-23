@@ -15,7 +15,6 @@ router.get('/', (req, res) => {
 
 // PUT route to add exercise to workout
 router.put('/:id', (req, res) => {
-    console.log(req.body)
     db.Workout.findByIdAndUpdate({ _id: req.params.id }, { $push: { exercises: req.body } }, { new: true, useFindAndModify: false })
     .then(dbWorkout => {
         res.status(200).json(dbWorkout);
@@ -27,7 +26,6 @@ router.put('/:id', (req, res) => {
 
 // POST route to create new workout
 router.post('/', ({ body }, res) => {
-    console.log(body);
     db.Workout.create(body)
         .then(dbWorkout => {
             res.status(200).json(dbWorkout);
