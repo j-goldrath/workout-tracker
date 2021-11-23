@@ -4,9 +4,18 @@ const mongoose = require("mongoose");
 
 // GET route to retrieve last workout
 router.get('/', (req, res) => {
-    db.Workout.findOne().sort({ day: -1 })
+    db.Workout.aggregate([
+        { $sort: { day: -1 } },
+        { $limit: 1 },
+        {
+            $addFields: {
+                totalDuration: { $sum: "$exercises.duration" },
+                totalWeight: { $sum: "$exercises.weight" }
+            }
+        }
+    ])
         .then(dbWorkout => {
-            res.status(200).json(dbWorkout);
+            res.status(200).json(dbWorkout[0]);
         })
         .catch(err => {
             res.status(500).json(err);
@@ -16,9 +25,9 @@ router.get('/', (req, res) => {
 // PUT route to add exercise to workout
 router.put('/:id', (req, res) => {
     db.Workout.findByIdAndUpdate({ _id: req.params.id }, { $push: { exercises: req.body } }, { new: true, useFindAndModify: false })
-    .then(dbWorkout => {
-        res.status(200).json(dbWorkout);
-    })
+        .then(dbWorkout => {
+            res.status(200).json(dbWorkout);
+        })
         .catch(err => {
             res.status(500).json(err);
         });
@@ -37,9 +46,19 @@ router.post('/', ({ body }, res) => {
 
 // GET route to retreive workout ranges
 router.get('/range', (req, res) => {
-    db.Workout.find({})
+    db.Workout.aggregate([
+        { $sort: { day: -1 } },
+        { $limit: 7 },
+        { $sort: { day: 1 } },
+        {
+            $addFields: {
+                totalDuration: { $sum: "$exercises.duration" },
+                totalWeight: { $sum: "$exercises.weight" }
+            }
+        }
+    ])
         .then(dbWorkout => {
-            res.json(dbWorkout);
+            res.status(200).json(dbWorkout);
         })
         .catch(err => {
             res.json(err);

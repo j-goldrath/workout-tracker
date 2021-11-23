@@ -39,10 +39,10 @@ const WorkoutSchema = new Schema({
 });
 
 WorkoutSchema.methods.totalDuration = function () {
-    let total = 0;
-    this.exercises.forEach(function (exercise) {
-        total += exercise.duration;
-    });
+    let total = 100;
+    // this.exercises.forEach(function (exercise) {
+    //     total += exercise.duration;
+    // });
     return total;
 };
 
