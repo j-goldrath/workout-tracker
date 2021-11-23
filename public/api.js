@@ -3,11 +3,14 @@ const API = {
     let res;
     try {
       res = await fetch("/api/workouts");
+      console.log(res)
     } catch (err) {
       console.log(err)
     }
     const json = await res.json();
-
+    
+   
+    //return information at json array at index[last number index]
     return json[json.length - 1];
   },
   async addExercise(data) {
@@ -34,7 +37,6 @@ const API = {
 
     return json;
   },
-
   async getWorkoutsInRange() {
     const res = await fetch(`/api/workouts/range`);
     const json = await res.json();
