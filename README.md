@@ -20,16 +20,16 @@ npm start
 ```
 
 ## Screen-Shots
-| Homepage |
-| :------: |
+| Fitness Tracker Homepage |
+| :----------------------: |
 | ![Fitness Tracker Homepage](https://github.com/j-goldrath/workout-tracker/blob/main/assets/images/fitness-tracker-homepage.png?raw=true) |
 
 | Create/Continue Workout |
 | :---------------------: |
 | ![Choose Exercise Type](https://github.com/j-goldrath/workout-tracker/blob/main/assets/images/add-exercise-menu.png?raw=true) |
 
-|  Cardio  |  Resistance  |
-|  :----:  |  :--------:  |
+|  Add Cardio Exercise  |  Add Resistance Exercise  |
+|  :-----------------:  |  :---------------------:  |
 | ![Add Cardio Exercise](https://github.com/j-goldrath/workout-tracker/blob/main/assets/images/add-cardio-exercise.png?raw=true) | ![Add Resistance Exercise](https://github.com/j-goldrath/workout-tracker/blob/main/assets/images/add-resistance-exercise.png?raw=true) |
 
 |  Workout Statistics  |
