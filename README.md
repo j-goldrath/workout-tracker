@@ -20,14 +20,21 @@ npm start
 ```
 
 ## Screen-Shots
-![Fitness Tracker Homepage](https://github.com/j-goldrath/workout-tracker/blob/main/assets/images/fitness-tracker-homepage.png?raw=true)
-![Choose Exercise Type](https://github.com/j-goldrath/workout-tracker/blob/main/assets/images/add-exercise-menu.png?raw=true)
+| Homepage |
+| :------: |
+| ![Fitness Tracker Homepage](https://github.com/j-goldrath/workout-tracker/blob/main/assets/images/fitness-tracker-homepage.png?raw=true) |
 
-Cardio |  Resistance
-:----: |  :--------:
-![Add Cardio Exercise](https://github.com/j-goldrath/workout-tracker/blob/main/assets/images/add-cardio-exercise.png?raw=true) | ![Add Resistance Exercise](https://github.com/j-goldrath/workout-tracker/blob/main/assets/images/add-resistance-exercise.png?raw=true)
+| Create/Continue Workout |
+| :---------------------: |
+| ![Choose Exercise Type](https://github.com/j-goldrath/workout-tracker/blob/main/assets/images/add-exercise-menu.png?raw=true) |
 
-![Check Workout Stats](https://github.com/j-goldrath/workout-tracker/blob/main/assets/images/workout-dashboard.png?raw=true)
+|  Cardio  |  Resistance  |
+|  :----:  |  :--------:  |
+| ![Add Cardio Exercise](https://github.com/j-goldrath/workout-tracker/blob/main/assets/images/add-cardio-exercise.png?raw=true) | ![Add Resistance Exercise](https://github.com/j-goldrath/workout-tracker/blob/main/assets/images/add-resistance-exercise.png?raw=true) |
+
+|  Workout Statistics  |
+|  :----------------:  |
+| ![Check Workout Stats](https://github.com/j-goldrath/workout-tracker/blob/main/assets/images/workout-dashboard.png?raw=true) |
 
 ## Walkthroughs
 
