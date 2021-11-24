@@ -26,6 +26,7 @@ npm start
 Cardio |  Resistance
 :----: |  :--------:
 ![Add Cardio Exercise](https://github.com/j-goldrath/workout-tracker/blob/main/assets/images/add-cardio-exercise.png?raw=true) | ![Add Resistance Exercise](https://github.com/j-goldrath/workout-tracker/blob/main/assets/images/add-resistance-exercise.png?raw=true)
+
 ![Check Workout Stats](https://github.com/j-goldrath/workout-tracker/blob/main/assets/images/workout-dashboard.png?raw=true)
 
 ## Walkthroughs
