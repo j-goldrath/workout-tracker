@@ -25,7 +25,7 @@ app.use(express.json()); //parse incoming requests with json payloads
 app.use(express.static(path.join(__dirname, "public"))); //serve static assets from public folder
 
 // Configure connection to MongoDB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false });
 
 // Configure express to use routes defined in controllers directory
 app.use(routes);
