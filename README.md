@@ -1,5 +1,5 @@
-# Workout Tracker
-This simple node.js app provides a web interface for users to create a workout, to which they can add different types of exercises.  These workouts and exercises are stored in a database and users can see statistics on their progess over the past 7 days.
+# Fitness Tracker App
+This simple node.js app provides a web interface for users to create a workout, to which they can add different types of exercises and details about those exercises.  These workouts and exercises are stored in a database and users can see statistics on their progess over the past 7 days.
 
 ## Table Of Contents
 - [Installation](#installation)
