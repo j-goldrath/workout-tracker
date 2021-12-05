@@ -18,8 +18,6 @@ npm run seed
 ```
 npm start
 ```
-
-## Screen-Shots
 | Fitness Tracker Homepage |
 | :----------------------: |
 | ![Fitness Tracker Homepage](https://github.com/j-goldrath/workout-tracker/blob/main/assets/images/fitness-tracker-homepage.png?raw=true) |
@@ -35,8 +33,3 @@ npm start
 |  Workout Statistics  |
 |  :----------------:  |
 | ![Check Workout Stats](https://github.com/j-goldrath/workout-tracker/blob/main/assets/images/workout-dashboard.png?raw=true) |
-
-## Walkthroughs
-
-## License
-
